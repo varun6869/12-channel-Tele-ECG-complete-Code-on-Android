@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="bt_listsize">670dp</dimen>
+    <dimen name="fontsize">30dp</dimen>
+    
+</resources>

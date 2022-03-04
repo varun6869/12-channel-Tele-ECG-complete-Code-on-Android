@@ -1,0 +1,49 @@
+1)Bluetooth Progress Dialog(Show Busy Status)
+2)Changed Hint ot italic in Patient Info
+3)Toaseted message when  report can be generated when sufficient samples count are avaiable (Toast)
+4)Add  Transgender in Patient Info 
+5)changed CHSS No to Patent ID in Create Report
+
+
+
+
+1)Show message when  report can be generated when sufficient samples count are avaiable (Toast)
+2)Insert Comments in the Patient Info Screen and discard alert box for insert comment.
+3)Add  Transgender in Patient Info
+4)Removed view files Option after report generation and give Alert that Report created in TeleECG Folder 
+5)Filter only .dat files in Load data option
+6)remove - in .dat filename
+7)Remove NewPatient and Reacquistion
+
+------------- Completed --------------------------------
+
+--------------------------------------------------------
+Testing will be done  on 
+
+Android 7.0 / 7.1.1  /8.0
+
+
+
+---------------------------------
+1)Restore selected  Lead 
+5)Rename 0 to 150Hz to 50Hz Notch
+6)report generation even when there is no change
+
+
+2)Blank Screen on Loading in some sequence
+3)No Filter default is seen sometime
+4)Application is not exiting in one go sometimes
+
+
+
+Phase 2
+
+-----------------------------------------------------
+Save in Dicom Format 
+Save in Google drive or in Cloud
+Timing and Amplitude Parameters of PQRS Complex
+Unconfirmed Report for disease charactrerisation to be added in report
+Vector Diagram to be added in report
+
+
+

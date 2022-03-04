@@ -1,0 +1,353 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gray_back"
+    android:gravity="top"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+<ScrollView
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true" >
+	
+<TableLayout
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignTop="@+id/scrollView1" >
+	
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+		
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#800080" />
+    </TableRow>
+    	
+        <TableRow
+        android:layout_width="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+    
+ 	<TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:hint="Patient Name"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:textColor="#800080"
+            android:textColorHint="#800080" >
+             <requestFocus />
+              </EditText>
+    </TableRow>
+    
+ 	
+ 	  <TableRow
+        android:layout_width="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+ 	
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/chss_no"
+            android:layout_width="match_parent"
+            android:hint="CHSSNO"
+            android:inputType="text"
+            android:maxLength="20"
+            android:textColor="#800080"
+            android:textColorHint="#800080">
+        </EditText>
+    </TableRow>
+    
+      <TableRow
+        android:layout_width="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+    
+<TableRow
+    android:id="@+id/tableRow9"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/DOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Date of birth"
+        android:inputType="date" 
+        android:textColor="#800080"
+         android:textColorHint="#800080"/>
+</TableRow>
+
+  <TableRow
+     
+        android:layout_width="wrap_content">
+
+            <TextView
+               
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+    
+  
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/txtAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Patient Age"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="#800080"
+            android:textColorHint="#800080" />
+    </TableRow>
+ 
+  <TableRow
+     
+        android:layout_width="wrap_content">
+
+            <TextView
+               
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+ 
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/spinner_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#800080" />
+
+       
+    </TableRow>
+    
+      <TableRow
+     
+        android:layout_width="wrap_content">
+
+            <TextView
+               
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+    
+ <TableRow
+        android:id="@+id/tableRow10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <Spinner
+     android:id="@+id/spinner_height"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:textColor="#800080" />
+
+        <TextView
+            android:id="@+id/txtvw_ht"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#800080"
+            android:text="(cm)" />
+        
+    </TableRow>
+    
+   <TableRow
+     
+        android:layout_width="wrap_content">
+
+            <TextView
+               
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+    
+    
+    
+     <TableRow
+        android:id="@+id/tableRow11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/spinner_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#800080" />
+
+        <TextView
+            android:id="@+id/txtvw_wt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#800080"
+            android:text="(Kg)" />
+
+    </TableRow>
+   
+     
+       <TableRow
+     
+        android:layout_width="wrap_content">
+
+            <TextView
+               
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+    
+<TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/txtMedication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Medications"
+            android:inputType="text"
+            android:textColor="#800080"
+            android:textColorHint="#800080" />
+    </TableRow>
+    
+  <TableRow
+     
+        android:layout_width="wrap_content">
+
+            <TextView
+               
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/txtBP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Blood Pressure"
+            android:inputType="date"
+            android:maxLength="15"
+            android:textColor="#800080"
+            android:textColorHint="#800080" />
+    </TableRow>
+    
+  <TableRow
+     
+        android:layout_width="wrap_content">
+
+            <TextView
+               
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+    
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="Save"
+            android:textColor="#800080" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.33"
+            android:text="Clear"
+            android:textColor="#800080" />
+        
+         <Button
+             android:id="@+id/btnCancel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="0.33"
+             android:text="Cancel" 
+             android:textColor="#800080"/>
+        
+    </LinearLayout>
+
+</TableLayout>
+ </ScrollView>
+
+</RelativeLayout>

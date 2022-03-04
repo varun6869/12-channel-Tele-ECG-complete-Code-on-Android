@@ -1,0 +1,250 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <item 
+        android:id="@+id/item_previous" 
+        android:title="previous " 
+        android:showAsAction="ifRoom" 
+        android:enabled="true" 
+        android:orderInCategory="1" 
+        android:visible="true"
+        android:icon="@drawable/previouss"
+       > 
+       </item>
+       
+       <item 
+        android:id="@+id/item_start" 
+        android:title="Start" 
+        android:enabled="true" 
+        android:orderInCategory="2" 
+        android:showAsAction="ifRoom"
+        android:visible="true"
+        android:icon="@drawable/start">
+    </item>
+    
+     <item 
+        android:id="@+id/item_stop" 
+        android:title="Stop" 
+        android:showAsAction="ifRoom" 
+        android:enabled="true" 
+        android:orderInCategory="3" 
+        android:visible="true"
+        android:icon="@drawable/stopp" >
+     
+    </item>
+    
+     <item 
+        android:id="@+id/item_next" 
+        android:title="Next" 
+        android:showAsAction="ifRoom" 
+        android:enabled="true" 
+        android:orderInCategory="4" 
+        android:visible="true"
+         android:icon="@drawable/nextt"
+        >
+    </item>
+       
+       <item 
+        android:id="@+id/item_mode" 
+        android:title="Mode" 
+        android:enabled="true" 
+        android:orderInCategory="5" 
+        android:visible="true"  >
+     
+      	<menu>
+      	     <group 
+                  android:checkableBehavior="single">
+         		<item 
+        			android:id="@+id/item_test" 
+        			android:title="Test " 
+        			android:checked="false"
+        			android:enabled="true" 
+        			android:visible="true"/>
+ 
+    			<item 
+        			android:id="@+id/item_ecg" 
+        			android:title="ECG" 
+        			android:checked="true"
+        			android:enabled="true" 
+        			android:visible="true"/>
+    			</group>
+         </menu>
+    </item>
+   
+    <item 
+        android:id="@+id/item_filter" 
+        android:title="Filter " 
+        android:enabled="true" 
+        android:orderInCategory="6" 
+        android:visible="true"  >
+		     
+      	 <menu>
+      	    
+         		<!-- <item 
+        			android:id="@+id/item_filter_on" 
+        			android:title="Filter ON " 
+        			android:enabled="true" 
+        			android:visible="true">
+        			
+	    			<menu> -->
+		      			<group android:id="@+id/grp_filter" android:visible="true" android:checkableBehavior="single">
+		      			<item android:id="@+id/item_0_150" android:checked="false" android:visible="true" android:title="50Hz Notch"/>
+		      			<item android:id="@+id/item_5_40" android:checked="false" android:visible="true" android:title="5 to 40 Hz"/>
+		      			<item android:id="@+id/item_0_40" android:checked="true" android:visible="true" android:title="0 to 40 Hz"/>
+		      			<item android:id="@+id/item_5_25" android:checked="false" android:visible="true" android:title="5 to 25 Hz"/>
+		      			<item android:id="@+id/item_0_25" android:title="0 to 25 Hz" android:checked="false" android:visible="true"/>
+		      			<item 
+			        			android:id="@+id/item_filter_off" 
+			        			android:checked="false"
+			        			android:title="Filter OFF" 
+			        			android:enabled="true" 
+			        			android:visible="true">
+    			</item>
+		      			
+		      			</group>
+	      			<!-- </menu>
+ 				</item> -->
+    			
+         </menu>
+      	
+    </item>
+    
+     <!--  <item 
+        android:id="@+id/item_demo" 
+        android:title="Demo" 
+        android:showAsAction="ifRoom" 
+        android:enabled="true" 
+        android:orderInCategory="7" 
+        android:visible="true"> 
+    </item> -->
+    
+      <item 
+        android:id="@+id/item_gain" 
+        android:title="Gain" 
+        android:enabled="true" 
+        android:orderInCategory="7" 
+        android:visible="true" >
+           
+        <menu>
+              <group 
+                  android:checkableBehavior="single">
+                <item android:id="@+id/gain1" android:title="1"  android:visible="false"
+					android:checked="false"></item>
+      			<item android:id="@+id/gain2" android:title="2"  android:visible="false"
+      			     android:checked="false"></item>
+      			<item android:id="@+id/gain3" android:title="Gain=0.5"
+      			     android:checked="false"></item>
+      			<item android:id="@+id/gain4" android:title="4"  android:visible="false"
+      			     android:checked="false"></item>
+      			<item android:id="@+id/gain6" android:title="Gain=1"
+      			     android:checked="true"></item>
+      			<item android:id="@+id/gain8" android:title="8"  android:visible="false"
+      			     android:checked="false"></item>
+      			<item android:id="@+id/gain12" android:title="Gain=2"
+      			     android:checked="false"></item> 
+              </group>
+        </menu>
+       
+    </item>
+      
+    <item 
+        android:id="@+id/item_gen_report" 
+        android:title="Generate Report" 
+        android:enabled="true" 
+        android:orderInCategory="8" 
+        android:visible="true">
+      	
+        <menu>
+            <group 
+                  android:checkableBehavior="single">
+            <item 
+        			android:id="@+id/item_Simultaneous_report" 
+        			android:checked="true"
+        			android:title="Simultaneous Report" 
+        			android:enabled="true" 
+        			android:visible="true"/>
+         		<item 
+        			android:id="@+id/item_Sequence_report" 
+        			android:checked="false"
+        			android:title="Sequential Report" 
+        			android:enabled="true" 
+        			android:visible="true"/>
+ 			</group>
+    			
+         </menu>
+    </item>
+      
+    <item android:id="@+id/item_ACQ_mode" 
+            android:title="ACQ Mode" 
+            android:visible="false"
+            android:orderInCategory="9">
+            <menu>
+                <group android:id="@+id/grp_acq_mode" 
+                       android:visible="true" 
+                       android:checkableBehavior="single">
+         		
+                    <item android:id="@+id/item_Auto" 
+                        android:title="Auto Mode" 
+                        android:checked="false" 
+                        android:visible="true"/>
+                    
+                    <item android:id="@+id/item_manual" 
+                        android:title="Manual Mode" 
+                        android:checked="false" 
+                        android:enabled="true" 
+                        android:visible="true"/>
+                </group>
+            </menu>
+        </item>
+    <item
+        android:id="@+id/item_patient_detail"
+        android:orderInCategory="10"
+        android:visible="false"
+        android:title="Patient Details"/>
+    
+    <item android:id="@+id/item_load_data"
+         android:orderInCategory="11" 
+          android:visible="true"
+         android:title="Load Data"> </item>
+        
+   
+   <item
+        android:id="@+id/item_send"
+        android:orderInCategory="12"
+        android:visible="true"
+        android:title="Send"/>
+   
+        <item 
+        android:id="@+id/item_MainPage" 
+        android:title="Back to MainPage" 
+        android:enabled="true" 
+        android:orderInCategory="13" 
+        android:visible="true"/>
+   
+        <item android:id="@+id/item_new_patient" 
+        android:title="New Patient"
+        android:enabled="true"
+        android:orderInCategory="14"
+        android:visible="true">            
+   </item>
+        
+      <item android:id="@+id/item_prev_lead" 
+      android:visible="true" 
+      android:showAsAction="ifRoom" 
+      android:orderInCategory="15" android:title="Prev Lead" />
+      
+      <item android:id="@+id/item_next_lead" 
+      android:visible="true" 
+      android:showAsAction="ifRoom" 
+      android:orderInCategory="16" android:title="Next Lead" />
+      
+      <item android:id="@+id/item_repeat_acq" 
+      android:visible="true" 
+      android:title="Repeat Acquisition" 
+      android:orderInCategory="17"></item>
+       
+      <!--  <item android:id="@+id/item_view_report" 
+        	android:title="View Report" 
+        	android:visible="true" 
+        	android:orderInCategory="18"></item>  -->
+        
+</menu>

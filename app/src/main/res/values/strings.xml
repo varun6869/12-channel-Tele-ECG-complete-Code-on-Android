@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">12CH. TELE ECG</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_start_up">12CH. TELE ECG</string>
+    <string name="title_activity_generate_report">Generate_report</string>
+    <string name="title_activity_filechooser">Filechooser</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_activity_bluetooth_connect">Bluetooth_connect</string>
+    <string name="title_activity_paintview">Paintview</string>
+    <string name="title_activity_paint_view">PaintView</string>
+    <string name="patient_id"><i>Patient ID</i></string>
+    <string name="patient_name"><i>Patient Name</i></string>
+    <string name="date_of_birth"><i>Date of birth</i></string>
+    <string name="patient_age"><i>Patient Age</i></string>
+    <string name="medications"><i>Medications</i></string>
+    <string name="blood_pressure"><i>Blood Pressure</i></string>
+    <string name="comments"><i>Comments</i></string>
+    <string name="weight_kg">Weight (Kg)</string>
+    <string name="height_cm">Height (cm)</string>
+
+
+</resources>
